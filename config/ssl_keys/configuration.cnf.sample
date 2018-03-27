@@ -1,0 +1,20 @@
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+
+[req_distinguished_name]
+C = CA
+ST = BC
+L = Vancouver
+O = Not available
+CN = Test
+
+[v3_req]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @subject_alternate_names
+
+[subject_alternate_names]
+IP.1 = YOUR IP HERE
+DNS.1 = YOUR HOSTNAME HERE
