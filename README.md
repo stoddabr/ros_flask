@@ -95,7 +95,7 @@ We have tested two ways to accomplish this:
    roslaunch flask_ask_ros start_skill_server.launch ngrok:=true
    ```
 
-[ngrok_url]: https://github.com/3SpheresRoboticsProject/flask_ask_ros/raw/devel/common/ngrok.png "ngrok terminal"
+[ngrok_url]: https://github.com/3SpheresRoboticsProject/flask_ask_ros/raw/master/common/ngrok.png "ngrok terminal"
 
 ### Static IP/Dynamic DNS + self-signed SSL certificate
 
@@ -125,7 +125,7 @@ We have tested two ways to accomplish this:
    roslaunch flask_ask_ros start_skill_server.launch
    ```
 
-[virt_srv]: https://github.com/3SpheresRoboticsProject/flask_ask_ros/raw/devel/common/virt_serv.png "D-Link DIR-655 Virtual Server setting example"
+[virt_srv]: https://github.com/3SpheresRoboticsProject/flask_ask_ros/raw/master/common/virt_serv.png "D-Link DIR-655 Virtual Server setting example"
 
 
 ## Testing
