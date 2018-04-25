@@ -138,7 +138,6 @@ Run the skill server to test your skill.
 
 ## TODO
 
-* Update package and license information
 * Sample code for ROS services
 
 This app was not created or endorsed by Amazon.

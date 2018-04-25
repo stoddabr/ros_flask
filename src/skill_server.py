@@ -29,10 +29,10 @@ def launch():
     return question(welcome_sentence)
 
 
-@ask.intent('FirstName', default={'name': None})
+@ask.intent('TestIntent', default={'name': None})
 def test_intent_function(name):
     '''
-    Executed when "FirstName" is called:
+    Executed when "TestIntent" is called:
     say "Alexa, ask tester to say (first name of a person)"
     Note that the 'intent_name' argument of the decorator @ask.intent
     must match the name of the intent in the Alexa skill.
@@ -49,12 +49,12 @@ def session_ended():
 if __name__ == '__main__':
     if NGROK:
         print 'NGROK mode'
-        app.run(port=5000)
+        app.run(host=os.environ['ROS_IP'], port=5000)
     else:
         print 'Manual tunneling mode'
         dirpath = os.path.dirname(__file__)
         cert_file = os.path.join(dirpath, '../config/ssl_keys/certificate.pem')
         pkey_file = os.path.join(dirpath, '../config/ssl_keys/private-key.pem')
-        app.run(host=your_ip_or_hostname, port=5000,
+        app.run(host=os.environ['ROS_IP'], port=5000,
                 ssl_context=(cert_file, pkey_file))
     
