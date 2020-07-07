@@ -1,3 +1,0 @@
-<launch>
-  <node name='flask_ask_skill_server' type='skill_server.py' pkg='flask_ask_ros' output='screen'/>
-</launch>

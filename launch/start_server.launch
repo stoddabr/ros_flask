@@ -1,0 +1,3 @@
+<launch>
+  <node name='flask_ros_server' type='main.py' pkg='flask_ros' output='screen'/>
+</launch>

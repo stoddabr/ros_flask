@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>flask_ask_ros</name>
-  <version>0.0.0</version>
+  <name>flask_ros</name>
+  <version>0.0.1</version>
   <description>An basic, prototype integration between Flask and ROS</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
