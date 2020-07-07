@@ -4,16 +4,16 @@ Simple Flask - ROS prototype.
 
 Alternative to using [ROSLIBJS](http://wiki.ros.org/roslibjs)
 
-Send motion commands via
-`http://localhost:5000/send_movement_command/<direction>`
+Send motion commands via `http://localhost:5000/send_movement_command/<direction>`
 
-View possible commands at  
-`http://localhost:5000/help`
+View possible commands at `http://localhost:5000/help`
 
 # Basic Quickstart
 
-After setting up ROS catkin, run this:
-`roslaunch flask_ros start_server.launch`
+After setting up ROS catkin and making, run this:
+```bash
+roslaunch flask_ros start_server.launch
+```
 
 For more information view the flask_ask_ros repo linked below.
 
