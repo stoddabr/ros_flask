@@ -16,7 +16,8 @@ app = Flask(__name__)
 # in the main thread.
 
 threading.Thread(target=lambda: rospy.init_node('test_node', disable_signals=True)).start()
-pub = rospy.Publisher('test_pub', String, queue_size=1)
+pubMotion = rospy.Publisher('/requestMotion01', String, queue_size=1)
+pubStop = rospy.Publisher('/requestStop01', String, queue_size=1)
 # NGROK = rospy.get_param('/ngrok', None)
 
 
@@ -32,9 +33,13 @@ def info():
 
 @app.route('/send_movement_command/<direction>', methods = ['GET'])
 def send_movement_command(direction):
-    if any(direction in d for d in ['forward','backward','left','right']):
-        pub.publish(direction)
-        return html.success(direction)
+    if any(direction in d for d in ['forward','backward','left','right', 'stop']):
+        # new ROSLIB.Message({data: motion})
+        if (direction == 'stop'):
+            pubStop.publish( direction.upper() )
+        else:
+            pubMotion.publish( direction.upper() )
+            return html.success(direction)
     else:
         mgs = 'Direction not recognized'
         return html.failure(msg)
