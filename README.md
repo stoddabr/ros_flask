@@ -8,6 +8,8 @@ Send motion commands via `http://localhost:5000/send_movement_command/<direction
 
 View possible commands at `http://localhost:5000/help`
 
+An in-depth tutorial is available on the [ros_flask wiki](https://github.com/stoddabr/ros_flask/wiki/Tutorial)
+
 # Basic Quickstart
 
 After setting up ROS catkin and making, run this:
