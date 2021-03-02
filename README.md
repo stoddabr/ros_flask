@@ -23,7 +23,7 @@ For more information view the flask_ask_ros repo linked below.
 
 * Flask HTML templates don't seem to work.
 See /src/html.py for used workaround for providing html responses.
-This could be an issue with how ROS manages directories. -- NOTE: I have actually fixed this on another project but am too lazy to update things here. If someone wants this create an issue and I'll update things
+This could be an issue with how ROS manages directories. -- NOTE: I have actually fixed this on another project but am too lazy to update things here. If someone wants this create an issue and I'll update this repo
 
 # Acknowledgements
 
